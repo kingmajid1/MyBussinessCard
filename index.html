@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content='width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=yes'>
-    <title>Unity WebGL Player | Fazel Business Card</title>
+    <title>Unity WebGL Player | BusinessCard</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <style>
         html{
@@ -74,7 +74,7 @@
     </div>
     <script src="arcamera.js" type="text/javascript"></script>
     <script src="itracker.js" type="text/javascript"></script>
-    <script src="Build/BusinessCard_WebGl.loader.js"></script>
+    <script src="Build/MyBussinessCard.loader.js"></script>
     <script>
             var initialize = async() =>{
                 var unityCanvas = document.querySelector("#unity-canvas");
@@ -105,12 +105,12 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/BusinessCard_WebGl.data",
-                    frameworkUrl: "Build/BusinessCard_WebGl.framework.js",
-                    codeUrl: "Build/BusinessCard_WebGl.wasm",
+                    dataUrl: "Build/MyBussinessCard.data",
+                    frameworkUrl: "Build/MyBussinessCard.framework.js",
+                    codeUrl: "Build/MyBussinessCard.wasm",
                     streamingAssetsUrl: "StreamingAssets",
-                    companyName: "DefaultCompany",
-                    productName: "Fazel Business Card",
+                    companyName: "Diakobits",
+                    productName: "BusinessCard",
                     productVersion: "0.1",
                     //webglContextAttributes: { "preserveDrawingBuffer": true },
                     // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
